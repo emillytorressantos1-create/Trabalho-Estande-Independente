@@ -4,65 +4,207 @@
     box-sizing: border-box;
 }
 
-:root{
-    --font-Source: "Source Serif 4", serif;
-    --font-dm: "DM Sans", sans-serif;
-}
-.container_cabecalho{
-    background-color: #F8F4EC;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+:root {
+    --marromClaro: #f8f4ec;
+    --marromMedio: #efe6d8;
+    --marromEscuro: #855438;
+    --fontDM: "DM Sans", sans-serif;
+    --fontLora: "Lora", serif;
 }
 
-.container_home{
-      /* background-color: rgba(0, 255, 255, 0.671); */
-    max-width: 1200px;
-    /* largura maxima; */
-    width: 95%;
-    /* largura de 95% */
-    margin: 0 auto;
-}
-
-.container_home img{
-    width: 230px;
-}
-.box_busca{
-    position: relative;
-}
-
-.box_busca svg {
-    width: 20px;
+h1 {
     position: absolute;
-    fill: #747878;
+    /* vai parar de respeitar hierarquia */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    /* esconde o titulo ou oq quiser/ter um h1 ajuda para recomendações */
+}
+
+
+
+
+/* ----------header------------- */
+
+header {
+  background-color: var(--marromClaro);
+  height: 150px;
+  font-family: var(--fontDM);
+  border-bottom: var(--marromMedio) solid 2px;
+}
+
+.container_ger {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.container_header {
+  /* background-color: aqua; */
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_header img {
+  width: 167px;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.nav_header a {
+  margin: 20px;
+  color: #9a8b7e;
+  display: inline-block;
+  transition: transform 0.7s ease;
+}
+
+.box_busca {
+  position: relative;
+}
+
+.botao_entrar {
+  background-color: var(--marromEscuro);
+  color: var(--marromClaro);
+  padding: 15px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: transform 0.7s ease;
 }
 
 .box_busca input {
-    padding-left: 33px;
-    padding-bottom: 5px;
-    background-color: #EFE6D8;
-    border: none;
-    border-bottom: solid 1px #747878;
-    font-size: 20px;
-    border-radius: 6px;
-    width: 386px;
-    height: 100%;
+  width: 500px;
+  background-color: var(--marromMedio);
+  border: none;
+  padding: 20px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 16px 12px 40px;
+  font-family: var(--fontDM);
+}
+
+.box_busca svg {
+  position: absolute;
+  width: 28px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  pointer-events: none;
+  fill: #9a8b7e;
 }
 
 .box_busca input:focus {
+  outline: none;
+}
+
+.nav_header a:hover {
+  color: var(--marromEscuro);
+  transform: scale(1.15);
+  text-decoration: underline;
+}
+
+.botao_entrar:hover {
+  transform: scale(1.15);
+}
+
+/* ----------questionario------------ */
+
+.hero{
+    background-color: var(--marromClaro);
+}
+
+.formulario {
+    padding-top: 10px;
+}
+
+.subtitulo {
+    font-size: 9px;
+    color: #916548;
+    margin-bottom: 12px;
+}
+
+
+.descricao {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #827266;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    background-color: #fffdf9;
+    border: 1px solid #dfd2c2;
+    border-radius: 4px;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
     outline: none;
 }
 
-
-.container_home{
-      display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
+input:focus,
+textarea:focus {
+    border-color: #9a6546;
 }
 
-.Descobrir_home,
-autores_home{
-text-decoration: var(--font-dm)
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: #925d3d;
+    color: white;
+
+    padding: 13px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #79492f;
+}
+
+
+footer{
+    background-color: var(--marromClaro);
 }

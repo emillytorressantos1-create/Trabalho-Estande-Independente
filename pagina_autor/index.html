@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autor</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <header class="container_home">
-        <div class="container_cabecalho">
-<img src="../logo/LOGO ESTANTE INDEPENDENTE.png" alt="logo estande INDEPENDENTE">
-        </div>
+    <header>
 
-        <div class="box_descobrir">
-<a  class="descobrir_home">Descobrir</a>
-<a class="autores_home">Autores</a>
-        </div>
-
-          <div class="box_busca">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+        <div class="container_ger container_header">
+            <img src="../logo/LOGO ESTANTE INDEPENDENTE.png" alt="logo estande independente" />
+            <nav class="nav_header">
+                <a href="">Descobrir</a>
+                <a href="">Autores</a>
+            </nav>
+            <div class="box_busca">
+                <input placeholder="Busque por livros, autores ou histórias..." type="search">
+                <svg xmlns="http://www.w3.org/2000/svg&quot;
+                viewBox=" 0 0 640
+                    640><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                     <path
                         d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
                 </svg>
-                <input type="text" placeholder="Busque livros,autores ou histórias">
             </div>
+            <a class="botao_entrar" href="">Entrar</a>
+        </div>
     </header>
+
+    <main>
+        <h1>Pagina autor</h1>
+        <section class="hero">
+            <div>
+
+                <p class="subtitulo">ENVIE SEU LIVRO</p>
+
+                <h1>Compartilhe sua história.</h1>
+
+                <p class="descricao">
+                    Preencha os dados do livro e envie os arquivos para publicação na Estande Independente.
+                </p>
+            </div>
+
+            <form>
+                <div class="nome">
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo">
+                </div>
+
+                <div class="email">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@gmail.com">
+                </div>
+
+                <div class="telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <label for="capa">Capa do livro</label>
+                <input type="file" id="capa">
+                <div class="capa_livro"></div>
+
+                <div class="pdf">
+
+                    <label for="pdf">Arquivo PDF do livro</label>
+                    <input type="file" id="pdf">
+                </div>
+                <div class="Descrição_livro">
+
+                    <label for="descricao">Descrição do livro</label>
+                    <textarea id="descricao"
+                        placeholder="Conte um pouco sobre a história, o gênero e o que o leitor pode esperar."></textarea>
+                </div>
+
+                <div class="enviar_livro">
+
+                    <button type="submit">
+                        Enviar livro
+                    </button>
+                </div>
+            </form>
+        </section>
+ <section class="containe_card">
+
+ </section>
+    </main>
+
+    <footer>
+        <p>Ajudas que aproximam</p>
+
+        <div class="link_ajuda">
+            <a href="">Ajuda</a>
+        </div>
+    </footer>
 </body>
+
 </html>
