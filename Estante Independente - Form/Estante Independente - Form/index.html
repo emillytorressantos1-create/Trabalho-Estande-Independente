@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compartilhe sua história | Estante Independente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header>
+    <div class="container_ger container_header">
+      <img src="../Estante Independente - Form/ESTANTE INDEPENDENTE SVG.svg" alt="" />
+      <nav class="nav_header">
+        <a href="">Descobrir</a>
+        <a href="">Autores</a>
+        <a href="">Nosso <br>acervo</a>
+      </nav>
+      <div class="box_busca">
+        <input placeholder="Busque por livros, autores ou histórias..." type="search">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640">
+            d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+        </svg>
+      </div>
+      <a class="botao_entrar" href="">Entrar</a>
+    </div>
+  </header>
+
+ 
+  <main class="container_ger container_main">
+       
+    <section class="box_form">
+      <p class="sobretitulo">Envie seu livro</p>
+      <h1>Compartilhe sua história.</h1>
+      <p class="texto_apoio">Preencha os dados do livro e envie os arquivos para publicação na Entrelinhas.</p>
+      
+      <form class="form_envio" action="#" method="post">
+        
+        <div class="campo_form">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+        </div>
+        
+        <div class="campo_form">
+          <label for="email">E-mail</label>
+          <div class="box_email">
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </div>
+        </div>
+        
+        <div class="campo_form">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+        
+        <div class="campo_form">
+          <label for="capa">Capa do livro</label>
+          <div class="campo_arquivo">
+            <span>Arraste a capa aqui ou selecione um arquivo</span>
+            <input type="file" id="capa" name="capa" accept="image/*">
+          </div>
+        </div>
+        
+        <div class="campo_form">
+          <label for="pdf">Arquivo PDF do livro</label>
+          <div class="campo_arquivo">
+            <span>Arraste o PDF aqui ou selecione um arquivo</span>
+            <input type="file" id="pdf" name="pdf" accept=".pdf,application/pdf">
+          </div>
+        </div>
+        
+        <div class="campo_form">
+          <label for="descricao">Descrição do livro</label>
+          <textarea id="descricao" name="descricao" placeholder="Conta um pouco sobre a história, o gênero e o que o leitor pode esperar."></textarea>
+        </div>
+        
+        <button class="botao_enviar" type="submit">Enviar livro</button>
+        
+      </form>
+    </section>
+    
+    <aside class="box_painel">
+      <p class="sobretitulo">Um bom livro é só o começo</p>
+      <h2>Entre. Sua próxima<br>história espera por você.</h2>
+      <p class="texto_apoio">Reencontre sua biblioteca, descubra novas vozes e siga perto de quem escreve.</p>
+      
+      <div class="box_circulo">
+        <img src="../Estante Independente - Form/a-casa-das-mares.png" alt="Capa do livro A casa das marés, de Helena Duarte">
+      </div>
+      
+      <div class="painel_rodape">
+        <div>
+          <p class="painel_frase">Histórias que ficam com a gente.</p>
+          <p class="painel_detalhe">Da nossa mesa de leitura para a sua.</p>
+        </div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+      </div>
+    </aside>
+     
+    
+  </main>
+  
+  <footer>
+    <div class="container_ger container_footer">
+      <p class="frase_footer">Histórias que aproximam.</p>
+      <nav class="nav_footer">
+        <a href="#">Ajuda</a>
+        <a href="#">Termos de uso</a>
+        <a href="#">Privacidade</a>
+      </nav>
+      <p class="copy_footer">© 2026 Entrelinhas</p>
+    </div>
+  </footer>
+
+</body>
+</html>
