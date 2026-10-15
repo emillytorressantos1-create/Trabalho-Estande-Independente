@@ -142,9 +142,8 @@ body {
 
 .container_main {
   display: grid;
-  grid-template-columns: minmax(0, 415px) minmax(0, 558px);
-  column-gap: 81px;
-  align-items: start;
+  grid-template-columns: minmax(0, 510px) minmax(0, 558px);
+  column-gap: 130px;
   padding: 56px 0;
 }
 
@@ -286,6 +285,12 @@ body {
 }
 
 /* ---------- Coluna do painel ---------- */
+
+aside{
+  max-height: 700px;
+}
+
+
 .box_painel {
   padding: 36px 38px 40px;
   background-color: var(--marromMedio);
@@ -395,7 +400,6 @@ footer {
 
 
 
-/* ---------- Telas médias (até 1150px) ---------- */
 @media (max-width: 1150px) {
   header {
     height: auto;
@@ -422,7 +426,6 @@ footer {
   }
 }
 
-/* ---------- Tablet (até 1000px) ---------- */
 @media (max-width: 1000px) {
   .container_main {
     grid-template-columns: minmax(0, 1fr);
@@ -430,7 +433,6 @@ footer {
   }
 }
 
-/* ---------- Celular (até 600px) ---------- */
 @media (max-width: 600px) {
   .container_header img {
     width: 110px;
